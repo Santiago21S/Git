@@ -27,7 +27,7 @@ git config --list
 git init
 
 # Clonar un repositorio remoto desde GitHub
-git clone [https://github.com/usuario/nombre-del-repo.git](https://github.com/usuario/nombre-del-repo.git)
+git clone https://github.com/usuario/nombre-del-repo.git
 ```
 
 ---
