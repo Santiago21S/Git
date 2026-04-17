@@ -126,5 +126,4 @@ git reset --hard HEAD~1
 
 ## 💡 Tips de Flujo Colaborativo
 1. **Mantente actualizado:** Antes de empezar a programar cada día, haz un `git pull` para evitar conflictos futuros.
-2. **Commits atómicos:** Haz commits pequeños y frecuentes que resuelvan una sola cosa.
 3. **Nombres de ramas:** Usa prefijos como `feat/` (funcionalidad), `fix/` (corrección) o `docs/` (documentación).
