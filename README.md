@@ -1,5 +1,5 @@
 
-content = """# 🚀 Guía Esencial de Git y GitHub
+# Guía de Git y GitHub
 
 Esta guía contiene los comandos fundamentales para el flujo de trabajo en desarrollo de software, ideal para organizar en herramientas de gestión de notas.
 
@@ -32,15 +32,15 @@ git clone [https://github.com/usuario/nombre-del-repo.git](https://github.com/us
 
 ---
 
-## 3. Flujo de Trabajo Diario (Staging & Commits)
+## 3. Flujo de Trabajo Diario
 El ciclo estándar para registrar cambios en tu código.
 
 ```bash
 # Ver el estado de tus archivos (modificados, nuevos, staged)
 git status
 
-# Preparar un archivo específico para el commit
-git add nombre-del-archivo.py
+# Preparar un único archivo
+git add archivo.py
 
 # Preparar todos los archivos modificados
 git add .
@@ -54,7 +54,7 @@ git commit --amend -m "Nuevo mensaje corregido"
 
 ---
 
-## 4. Gestión de Ramas (Branches)
+## 4. Gestión de Ramas
 Fundamental para el trabajo colaborativo y la implementación de nuevas funcionalidades.
 
 ```bash
@@ -76,7 +76,7 @@ git branch -d nombre-de-la-rama
 
 ---
 
-## 5. Sincronización con GitHub (Remotes)
+## 5. Sincronización con GitHub
 ```bash
 # Enviar tus cambios locales a la rama remota en GitHub
 git push origin nombre-de-la-rama
@@ -128,20 +128,3 @@ git reset --hard HEAD~1
 1. **Mantente actualizado:** Antes de empezar a programar cada día, haz un `git pull` para evitar conflictos futuros.
 2. **Commits atómicos:** Haz commits pequeños y frecuentes que resuelvan una sola cosa.
 3. **Nombres de ramas:** Usa prefijos como `feat/` (funcionalidad), `fix/` (corrección) o `docs/` (documentación).
-"""
-
-with open("Guia_Comandos_GitHub.md", "w", encoding="utf-8") as f:
-    f.write(content)
-
-
-```
-Tu guía de comandos de GitHub en formato Markdown está lista. He organizado el contenido de forma estructurada para que sea fácil de consultar o integrar en tus notas personales.
-
-[file-tag: code-generated-file-0-1776391507311894413]
-
-Esta guía incluye:
-* **Configuración inicial:** Identidad del usuario.
-* **Ciclo de trabajo:** `status`, `add`, `commit` y `push`.
-* **Gestión de ramas:** Creación, cambio y borrado de ramas.
-* **Sincronización:** Cómo mantener tu código al día con el repositorio remoto.
-* **Utilidades avanzadas:** Uso de `stash` para guardar cambios temporales y `log` para el historial.
